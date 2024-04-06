@@ -1,0 +1,224 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Josefin Sans", sans-serif;  
+   
+}
+.dark_mode{
+    background-color: black;
+    .tasks {
+        border-radius: 5px;
+        background: #25273D;
+        box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.50);
+        color: #C8CBE7;     
+    }
+    .hh{
+        border-radius: 5px;
+        background: #25273D;
+        box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.50);
+        color: #C8CBE7;     
+        border: none;
+    }
+    .FooterCHild{ border-radius: 5px;
+        background: #25273D;
+        box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.50);
+        color: #C8CBE7;     
+        border: none;
+
+    }
+    .row{
+        background: #393A4B;
+        color: #393A4B
+    }
+}
+
+.tasks{
+    margin-top: 100px;
+}
+.App{
+    background-image: url('./components/images/dark-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:300px;
+    background-position: center;
+    width: 100%
+}
+.tasks{
+    width: 327px;
+    height: 368px;
+    flex-shrink: 0;border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.50);
+    margin-top: 25px;
+}
+.hh{
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.50); 
+    width: 327px;
+height: 48px;
+flex-shrink: 0;
+margin-top: 100px;
+}
+.todoHeader{
+    color: white;
+    letter-spacing: 10px;
+    position: absolute;
+    margin: 20px;
+    top: 30px;
+
+}
+.afterTodo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+.todo_item{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.todo_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 30px;
+    text-align: center;
+    
+}
+.divTask{
+    display: flex;
+    gap: 10px;
+  
+}
+.deleteButton{
+    border: none;
+  font-size: 20px;
+  background-color: transparent;
+  color: grey;
+}
+.tasks{
+    overflow-y: auto;
+    max-height: 368px;;
+    
+}
+.todoFooter{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-size: 16px;
+    gap: 20px;
+    color: grey;
+    font-weight: 700;
+    position: absolute;
+    margin-top: 700px;
+}
+.hh::placeholder {
+     
+    padding-left: 20px;
+     font-size: 17px;
+
+  }
+.FooterCHild{
+    position: absolute;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    color: grey;
+    font-weight: 700;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.50);
+    width: 307px;
+height: 48px;
+flex-shrink: 0;
+}
+.row{
+   margin-top: 10px;
+   width: 100%;
+height: 1px;
+border: none;
+background-color: #E3E4F1;
+color: #E3E4F1;
+}
+.toggleButton{
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 270px;
+        background-color: transparent;
+        border: none;
+}
+.hh::placeholder {
+    margin-left: 40px;
+}
+.hh{
+  width: 330px;
+  margin-top: 400px;
+}
+.todo-list{
+  width: 300px;
+}
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media ( width >900px) {
+  .hh {
+      width: 540px;
+      height: 64px;
+      flex-shrink: 0;
+      
+  }
+  .todo-list{
+    width: 700px;
+
+  }
+
+  .tasks {
+      width: 100%;
+      max-width: 540px;
+      flex-shrink: 0;
+  }
+  .todoFooter {
+      gap: 10%;
+      font-size: 13px;
+      margin-top: 1100px;
+  }
+  .FooterCHild {
+      margin-top: -100px;
+      background-color: transparent;
+  }
+  .pFooter {
+      position: absolute;
+      margin-top: -83px;
+      margin-left: -400px;
+  }
+  .pFooter1 {
+      position: absolute;
+      margin-top: -83px;
+      margin-left: 460px;
+      width: 200px;
+  }
+  .todoHeader {
+      margin-left: 500px;
+  }
+  .toggleButton {
+      margin-left: 1000px;
+  }
+  .todoHeader{
+    margin-left: 91px;
+  }
+}
